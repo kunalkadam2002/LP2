@@ -1,0 +1,26 @@
+public class StringOperations {    
+    public String reverse(String str){
+	  //String res = str.reverse();
+	  //return res;
+
+        List<String> arr = new List<String>(str.split(''));   
+        Integer s=0, e=arr.size()-1;
+        while(s<e){
+            String temp = arr[s];
+            arr[s] = arr[e];
+            arr[e] = temp;
+            s++;
+            e--;
+        } 
+        String ans = String.join(arr,'');
+        return ans;
+    }
+}
+
+debug window code
+
+StringOperations obj = new StringOperations();
+String str = 'Carry On';
+System.debug('String Before Reversing is => '+str);
+str = obj.reverse(str);
+System.debug('String After Reversing is => '+str);

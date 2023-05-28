@@ -1,0 +1,12 @@
+public class TempConverter {
+    public void convert_CtoF(Decimal temp){
+        Decimal ans = (temp * 9 / 5)+32;
+        
+        System.debug('Temparature in celcius :'+temp+ ' converted to Farenhite is = ' + ans);
+    }
+}
+
+Code for debug window
+
+TempConverter obj = new TempConverter();
+obj.convert_CtoF(22.5);

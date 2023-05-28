@@ -1,0 +1,24 @@
+public class Palindrome {
+    public Boolean isPalindrome(String str){
+        Integer s = 0, e = str.length()-1;
+        
+        while(s<e){
+            if(str.charAt(s) != str.charAt(e)){
+                return false;
+            }
+            s += 1;
+            e -= 1;
+        }
+        return true;        
+    }
+}
+
+debug window code
+
+Palindrome obj = new Palindrome();
+if(obj.isPalindrome('eye')){
+    System.debug('eye is a palindromic string');
+}
+else{
+    System.debug('not a palindromic string');
+}

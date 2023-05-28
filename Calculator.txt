@@ -1,0 +1,29 @@
+public class Calculator {
+    public void calculate(String operation, Integer num1, Integer num2){
+        
+        if(operation == 'addition'){
+            Integer temp = num1 + num2;
+            System.debug('Addition of '+num1+' and '+num2+' is = '+temp);
+        }
+        else if(operation == 'subtract'){
+            Integer temp = num1 - num2;
+            System.debug('Subtraction of '+num1+' and '+num2+' is = '+temp);
+        }
+        else if(operation == 'multiply'){
+            Integer temp = num1 * num2;
+            System.debug('Multiplication of '+num1+' and '+num2+' is = '+temp);
+        }
+        else if(operation == 'division'){
+            Integer temp = num1 / num2;
+            System.debug('Division of '+num1+' and '+num2+' is = '+temp);
+        }
+    }
+}
+
+Code for debug window
+
+Calculator obj = new Calculator();
+obj.calculate('addition',1,5);
+obj.calculate('subtract',1,5);
+obj.calculate('multiply',2,5);
+obj.calculate('division',2,5);
